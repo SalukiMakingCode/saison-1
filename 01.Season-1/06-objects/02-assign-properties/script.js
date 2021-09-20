@@ -19,4 +19,15 @@
         user: null,
     };
     // your code here
+
+
+    for (let elem in computers) {
+        let id=elem.id;
+        if (elem.available===undefined) elem.available=defaultProps.available;
+        if (elem.os===undefined) elem.os=defaultProps.os;
+        if (elem.user===undefined) elem.users=defaultProps.users;
+    }
+    console.log(computers);
+
+
 })();

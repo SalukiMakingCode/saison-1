@@ -31,4 +31,25 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+      let length=birds.length;
+      let size=adjectives.size;
+      let randomBird=Math.floor(Math.random()*length);
+      let randomAdj=Math.floor(Math.random()*size);
+        let adj="";
+        let i=0;
+        for (let elem of adjectives) {
+            if (i===randomAdj) adj=elem;
+            i++;
+        }
+      let selectBird=birds[randomBird];
+      let nameBird=selectBird.name;
+      let isBirdFem=selectBird.fem;
+      let article="";
+      if (isBirdFem) { article="La"; adj=adj+"e"; }
+      else { article="Le"; }
+      console.log(article+" "+nameBird+" "+adj);
+    })
+
+
 })();

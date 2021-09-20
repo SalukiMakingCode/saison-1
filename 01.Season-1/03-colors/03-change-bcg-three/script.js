@@ -9,7 +9,6 @@ const random_hex_color_code = () => {
 
     // your code here
     document.getElementById("run").addEventListener("click", () => {
-
         document.body.style.backgroundColor = random_hex_color_code();
     })
 })();

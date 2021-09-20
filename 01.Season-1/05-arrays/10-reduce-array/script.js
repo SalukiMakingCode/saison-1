@@ -82,5 +82,13 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        var valeurInitiale = 0;
+        var somme = people.reduce(function (accumulateur, valeurCourante) {
+            return accumulateur + valeurCourante.age;
+        }, valeurInitiale);
+        console.log(somme);
+    })
+
 
 })();

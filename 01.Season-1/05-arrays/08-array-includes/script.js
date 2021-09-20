@@ -18,5 +18,13 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+    let itIsIn = false;
+    for (elem of fruits) {
+        if (elem==="apple") itIsIn=true;
+    }
+    if (itIsIn) console.log("There is an apple");
+    else console.log("There isn't an apple");
+    })
 
-})();
+ })();
