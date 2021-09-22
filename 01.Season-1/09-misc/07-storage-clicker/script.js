@@ -4,5 +4,14 @@
 (() => {
 
     // your code here
+    document.getElementById("target").innerHTML = localStorage.getItem("nbClick");
+
+    document.getElementById("increment").addEventListener("click",() =>{
+    let nbClick=Number(localStorage.getItem("nbClick"));
+    nbClick++;
+    localStorage.setItem("nbClick", nbClick);
+// Retrieve
+    document.getElementById("target").innerHTML = localStorage.getItem("nbClick");
+    })
 
 })();

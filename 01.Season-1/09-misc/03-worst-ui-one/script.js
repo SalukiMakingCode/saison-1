@@ -4,5 +4,7 @@
 (() => {
 
     // your code here
-
+    document.getElementById("slider").addEventListener("change", ()=>{
+        document.getElementById("target").textContent="0"+document.getElementById("slider").value;
+    })
 })();

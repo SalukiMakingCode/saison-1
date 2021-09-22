@@ -24,10 +24,5 @@
         document.getElementById("max").innerHTML = maximum;
         document.getElementById("sum").innerHTML = total;
         document.getElementById("average").innerHTML = average;
-
-
-
-
-
     })
 })();

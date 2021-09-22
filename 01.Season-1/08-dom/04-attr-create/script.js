@@ -5,4 +5,9 @@
 
     // your code here
 
+
+    const source=document.querySelector('#source');
+    let image=source.dataset.image;
+    document.getElementById("target").innerHTML="<img src="+image+" />";
+
 })();

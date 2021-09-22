@@ -4,5 +4,12 @@
 (() => {
 
     // your code here
+document.getElementById("run").addEventListener("click", ()=>{
+    if (document.getElementById("pass-one").value !== document.getElementById("pass-two").value) {
+        document.getElementById("pass-one").style.borderColor="red";
+        document.getElementById("pass-two").style.borderColor="red";
+    }
+})
+
 
 })();

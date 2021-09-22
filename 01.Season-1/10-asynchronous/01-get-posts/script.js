@@ -3,4 +3,10 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts((error, array) => {
+            array.forEach(element => console.log(element));
+        })
+    })
+
 })();

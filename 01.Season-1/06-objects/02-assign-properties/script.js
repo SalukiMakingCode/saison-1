@@ -20,14 +20,14 @@
     };
     // your code here
 
-
-    for (let elem in computers) {
-        let id=elem.id;
-        if (elem.available===undefined) elem.available=defaultProps.available;
-        if (elem.os===undefined) elem.os=defaultProps.os;
-        if (elem.user===undefined) elem.users=defaultProps.users;
-    }
-    console.log(computers);
+    document.getElementById("run").addEventListener("click", () => {
+        for (let prop in defaultProps) {
+            for (let i = 0; i < computers.length; i++) {
+                computers[i][prop] = computers[i][prop] ?? defaultProps[prop];
+            }
+        }
+        console.log(computers);
+    })
 
 
 })();

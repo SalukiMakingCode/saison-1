@@ -4,5 +4,38 @@
 (() => {
 
     // your code here
+    document.getElementById("target").innerHTML="" +
+        "<table>" +
+            "<tr>" +
+                "<td></td>" +
+            "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td></td>" +
+        "</tr>" +
+        "</table>";
 
 })();
