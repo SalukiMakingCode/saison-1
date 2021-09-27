@@ -1,10 +1,10 @@
-<!-- 8-dom/TO DO - 06-mini-carousel/index.html - 8.6: mini carousel -->
+<!-- 08-dom/05-hover-image/index.html - 8.5: image hover -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <title>BeCode/JavaScript - 8.6: mini carousel</title>
+  <title>BeCode/JavaScript - 8.5: image hover</title>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <link rel="stylesheet" href="../../_shared/css/normalize.css" />
@@ -16,22 +16,19 @@
     <header>
       <h1>BeCode / JavaScript</h1>
       <h2>
-        <span>8.6</span>
-        <strong>mini carousel</strong>
+        <span>8.5</span>
+        <strong>image hover</strong>
       </h2>
     </header>
     <main class="content">
       <article class="explain">
-        <p>When you click the button, change the source of the image to the next one listed in the
-          <strong>gallery</strong> array.</p>
+        <p>When hovering over the image, change its source attribute to the value specified in the "data-hover"
+          attribute.</p>
       </article>
       <section class="material">
         <figure>
-          <img src="../../_shared/img/bell.svg" alt="Carousel" />
+          <img src="../../_shared/img/kiss.svg" id="test" alt="Kiss?" data-hover="../../_shared/img/kiss-wink-heart.svg" />
         </figure>
-        <div class="actions">
-          <button type="button" id="next">Next image</button>
-        </div>
       </section>
     </main>
   </section>
